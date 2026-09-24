@@ -13,3 +13,6 @@ Os dados são armazenados no arquivo "medicamentos.csv", permitindo que os medic
 1. Baixe ou clone o repositório.
 2. Abra a pasta do projeto.
 3. Execute o arquivo "main.py" pelo terminal.
+
+## Autor
+Pedro Sily Lorenzo
