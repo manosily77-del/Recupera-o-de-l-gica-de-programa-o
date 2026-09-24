@@ -1,6 +1,5 @@
 ARQUIVO = "medicamentos.csv"
 
-
 def criar_arquivo():
     arquivo = open(ARQUIVO, "a")
     arquivo.write("")
@@ -35,7 +34,7 @@ def salvar_medicamentos(medicamentos):
 
 
 def cadastrar_medicamento(medicamentos):
-    print("\nCADASTRAR MEDICAMENTO")
+    print("\nCADASTRAR MEDICAMENTO\n")
 
     nome = input("Nome do medicamento: ")
     categoria = input("Categoria: ")
@@ -48,13 +47,13 @@ def cadastrar_medicamento(medicamentos):
 
     medicamentos.append(medicamento)
 
-    print("Medicamento cadastrado com sucesso!")
+    print("\nMedicamento cadastrado com sucesso!")
 
     return medicamentos
 
 
 def listar_medicamentos(medicamentos):
-    print("\n--- MEDICAMENTOS CADASTRADOS ---")
+    print("\nMEDICAMENTOS CADASTRADOS ")
 
     contador = 1
 
@@ -80,7 +79,7 @@ def buscar_medicamento(medicamentos, nome_busca):
 
 
 def realizar_busca(medicamentos):
-    print("\n--- BUSCAR MEDICAMENTO ---")
+    print("\nBUSCAR MEDICAMENTO\n")
 
     nome_busca = input("Digite o nome do medicamento: ")
 
@@ -90,7 +89,7 @@ def realizar_busca(medicamentos):
         print("Medicamento não encontrado.")
     else:
         for medicamento in encontrados:
-            print("\nMedicamento encontrado!")
+            print("\nMEDICAMENTO ENCONTRADO\n")
             print("Nome:", medicamento["nome"])
             print("Categoria:", medicamento["categoria"])
             print("Quantidade em estoque:", medicamento["quantidade"])
@@ -99,7 +98,7 @@ def realizar_busca(medicamentos):
 
 
 def mostrar_menu():
-    print("\n SISTEMA DE MEDICAMENTOS\n")
+    print("\nSISTEMA DE MEDICAMENTOS\n")
     print("1 - Cadastrar medicamento")
     print("2 - Listar medicamentos")
     print("3 - Buscar medicamento")
@@ -129,7 +128,7 @@ def main():
             salvar_medicamentos(medicamentos)
 
             print("\nDados salvos com sucesso!")
-            print("Programa encerrado.")
+            print("Programa encerrado.\n")
             break
 
         else:
